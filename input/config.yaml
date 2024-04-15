@@ -9,7 +9,6 @@ points:
     spread: kx
     tags:
       1u: true
-
   zones:
     main:
       key.tags:
@@ -23,7 +22,7 @@ points:
         pinkie:
           key:
             spread: kx
-            splay: 38
+            splay: 18
           rows:
             top:
               column_net: P0
@@ -34,9 +33,9 @@ points:
         ring:
           key:
             spread: kx
-            splay: -30
+            splay: -10
             origin: [-12, -11]
-            stagger: 12
+            stagger: 10
           rows:
             top:
               column_net: P3
@@ -47,7 +46,7 @@ points:
         middle:
           key:
             spread: kx+2
-            stagger: 12
+            stagger: 10
             splay: -3
           rows:
             top:
@@ -59,7 +58,7 @@ points:
         index:
           key:
             spread: kx+1
-            stagger: -8
+            stagger: -6
             splay: -5
           rows:
             top:
@@ -71,6 +70,7 @@ points:
         far:
           key:
             spread: kx
+            stagger: -8
           rows:
             top:
               column_net: P21
@@ -83,7 +83,7 @@ points:
         - key
       anchor:
         ref: main_index_bottom
-        shift: [19, -22]
+        shift: [19, -30]
       rows:
       columns:
         inner:
@@ -92,14 +92,14 @@ points:
         middle:
           key:
             splay: -28
-            spread: kx+6
-            stagger: -6
+            spread: kx+4
+            stagger: -5
             column_net: P7
         outer:
           key:
             splay: -28
-            spread: kx+6
-            stagger: -6
+            spread: kx+4
+            stagger: -5
             column_net: P8
 outlines:
   raw:
@@ -151,43 +151,44 @@ pcbs:
       keycaps:
         outline: keys
         layer: Eco1.user
-    footprints:
-      switch:
-        what: ceoloide/switch_choc_v1_v2
-        where: /key/
-        params:
-          from: "{{column_net}}"
-          to: "GND"
-          reversible: true
-          hotswap: true
-      nice_nano:
-        what: ceoloide/mcu_nice_nano
-        where:
-          ref: main_far_top
-          shift: [px,-7]
-        params:
-          reversible: true
-          side: B
-      reset:
-        what: ceoloide/reset_switch_tht_top
-        where:
-          ref: main_far_top
-          shift: [10, 0]
-          rotate: -90
-        params:
-          reversible: true
-      power_switch:
-        what: ceoloide/power_switch_smd_side
-        where:
-          ref: main_far_bottom
-          shift: [1.43px, -5]
-        params:
-          reversible: true
-      power_connector:
-        what: ceoloide/battery_connector_jst_ph_2
-        where:
-          ref: main_far_home
-          shift: [18, -14]
-          rotate: 90
-        params:
-          reversible: true
+
+#    footprints:
+#      switch:
+#        what: ceoloide/switch_choc_v1_v2
+#        where: /key/
+#        params:
+#          from: "{{column_net}}"
+#          to: "GND"
+#          reversible: true
+#          hotswap: true
+#      nice_nano:
+#        what: ceoloide/mcu_nice_nano
+#        where:
+#          ref: main_far_top
+#          shift: [px,-7]
+#        params:
+#          reversible: true
+#          side: B
+#      reset:
+#        what: ceoloide/reset_switch_tht_top
+#        where:
+#          ref: main_far_top
+#          shift: [10, 0]
+#          rotate: -90
+#        params:
+#          reversible: true
+#      power_switch:
+#        what: ceoloide/power_switch_smd_side
+#        where:
+#          ref: main_far_bottom
+#          shift: [1.43px, -5]
+#        params:
+#          reversible: true
+#      power_connector:
+#        what: ceoloide/battery_connector_jst_ph_2
+#        where:
+#          ref: main_far_home
+#          shift: [18, -14]
+#          rotate: 90
+#        params:
+#          reversible: true
