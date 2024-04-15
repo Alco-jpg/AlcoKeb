@@ -51,8 +51,50 @@
           "min_clearance": 0.508
         }
       },
-      "diff_pair_dimensions": [],
-      "drc_exclusions": [],
+      "diff_pair_dimensions": [
+        {
+          "gap": 0.0,
+          "via_gap": 0.0,
+          "width": 0.0
+        }
+      ],
+      "drc_exclusions": [
+        "copper_edge_clearance|130464616|124825806|abd2f8cb-f31d-4056-88c8-bfe2416d8a49|9f72e3ba-74a3-44fa-9e75-84d3f87b6cfe",
+        "copper_edge_clearance|130464616|124825806|abd2f8cb-f31d-4056-88c8-bfe2416d8a49|f1e90152-a77e-40a1-88be-6c6ccf097df7",
+        "copper_edge_clearance|139853287|106717090|aa4a2692-c4c1-4cab-8271-72fa5b563bde|679c3584-ff80-423a-ba69-e9871739a7ce",
+        "copper_edge_clearance|139853287|106717090|aa4a2692-c4c1-4cab-8271-72fa5b563bde|f1d0d78d-3034-4bea-806a-003ccc495725",
+        "copper_edge_clearance|160615384|92606998|0179d0a8-8bd4-4b16-b079-ff7d239340a2|8dfcd66d-6e3a-4484-b563-841f9ef07c00",
+        "copper_edge_clearance|160615384|92606998|0179d0a8-8bd4-4b16-b079-ff7d239340a2|d1f2d4c6-dd04-4399-9111-2b4b139a5af0",
+        "copper_edge_clearance|257416933|137018995|3b8c804f-8fa8-41e9-94a8-4e1b31637c9d|75ccc34a-fdd6-4390-9067-8f18067818ae",
+        "copper_edge_clearance|257416933|137018995|3b8c804f-8fa8-41e9-94a8-4e1b31637c9d|77c6ab0b-53a4-4e39-8667-56ba34cf1309",
+        "copper_edge_clearance|257416933|144318995|3b8c804f-8fa8-41e9-94a8-4e1b31637c9d|3facce8f-3f7e-47e6-a92a-c76a51ebae16",
+        "copper_edge_clearance|257416933|144318995|3b8c804f-8fa8-41e9-94a8-4e1b31637c9d|86ab2d93-9900-4add-9fd1-4763216d6123",
+        "lib_footprint_issues|138334608|117116996|e2d3e604-43df-49ff-80f0-1c3d427d70b4|00000000-0000-0000-0000-000000000000",
+        "lib_footprint_issues|143587897|133284957|3c3066de-2e12-404a-94c0-b40fbd2f5557|00000000-0000-0000-0000-000000000000",
+        "lib_footprint_issues|148841186|149452918|f9919a5e-5496-4ec6-9681-a829b297fa88|00000000-0000-0000-0000-000000000000",
+        "lib_footprint_issues|161113884|101960708|29a06ea2-0442-424a-9438-3ab25ae9c6ce|00000000-0000-0000-0000-000000000000",
+        "lib_footprint_issues|163479827|118795265|e54f0fec-c993-4369-8841-24f5a66f8217|00000000-0000-0000-0000-000000000000",
+        "lib_footprint_issues|165845770|135629823|70a0869b-16f6-41c8-886e-d50d1f0c0eb0|00000000-0000-0000-0000-000000000000",
+        "lib_footprint_issues|181491170|88972991|5133981e-3d76-49f9-b63c-9d2317170b79|00000000-0000-0000-0000-000000000000",
+        "lib_footprint_issues|182972817|105908301|9dfacb53-f791-4fa8-9773-6b631f610230|00000000-0000-0000-0000-000000000000",
+        "lib_footprint_issues|184454465|122843611|8a7ab5ca-82fd-462d-82a0-22df0d77b7db|00000000-0000-0000-0000-000000000000",
+        "lib_footprint_issues|204231933|110006495|a9d7f577-3fe8-46bc-9408-1f14d34262e4|00000000-0000-0000-0000-000000000000",
+        "lib_footprint_issues|204231933|127006495|45548abd-252c-4442-bd06-a381e6ad536e|00000000-0000-0000-0000-000000000000",
+        "lib_footprint_issues|204231933|93006495|5fe2af64-15fa-4cc0-ac36-28339d367693|00000000-0000-0000-0000-000000000000",
+        "lib_footprint_issues|222231933|101006495|fe90082a-30f3-4557-9bd4-2ccbc74ca0cf|00000000-0000-0000-0000-000000000000",
+        "lib_footprint_issues|222231933|118006495|2e4a3e22-bf00-4a57-b62f-18046c417fb2|00000000-0000-0000-0000-000000000000",
+        "lib_footprint_issues|222231933|135006495|4727fc97-77a3-4926-9a72-e28d8eb97ee2|00000000-0000-0000-0000-000000000000",
+        "lib_footprint_issues|223231933|157006495|e49ef5ac-90ed-4786-ae78-59e168388feb|00000000-0000-0000-0000-000000000000",
+        "lib_footprint_issues|234231933|102168995|00000000-0000-0000-0000-000061905781|00000000-0000-0000-0000-000000000000",
+        "lib_footprint_issues|244556933|133168995|2beed828-08b4-42d9-8e6e-670ca933696a|00000000-0000-0000-0000-000000000000",
+        "lib_footprint_issues|246231933|110438995|268f7227-a39e-43b7-9eb9-44616e2dea56|00000000-0000-0000-0000-000000000000",
+        "lib_footprint_issues|246828202|162539226|13452d1d-ff50-47e0-aa6d-ce17579dc4ba|00000000-0000-0000-0000-000000000000",
+        "lib_footprint_issues|256096933|141168995|73139e7e-aa1c-4ea8-a0f3-ad898871298e|00000000-0000-0000-0000-000000000000",
+        "lib_footprint_issues|263147124|176443643|4636ad7f-860b-40e5-855d-7cd245b11835|00000000-0000-0000-0000-000000000000",
+        "silk_edge_clearance|257316933|138318995|3b8c804f-8fa8-41e9-94a8-4e1b31637c9d|6dd84251-7275-4f2e-90fb-182464edd526",
+        "silk_edge_clearance|257316933|144018995|3b8c804f-8fa8-41e9-94a8-4e1b31637c9d|a6f5a601-f8de-436c-ac45-4a7fd9fd075f",
+        "silk_overlap|246323725|103781909|33dc5a60-fda1-4daa-8526-94ac7b676273|4fa351a4-a6dc-47b8-8219-a7a7634830a2"
+      ],
       "meta": {
         "filename": "board_design_settings.json",
         "version": 2
@@ -110,21 +152,21 @@
       },
       "rules": {
         "max_error": 0.005,
-        "min_clearance": 0.0,
-        "min_connection": 0.0,
-        "min_copper_edge_clearance": 0.075,
+        "min_clearance": 0.15,
+        "min_connection": 0.15,
+        "min_copper_edge_clearance": 0.25,
         "min_hole_clearance": 0.25,
         "min_hole_to_hole": 0.25,
         "min_microvia_diameter": 0.2,
         "min_microvia_drill": 0.1,
         "min_resolved_spokes": 2,
-        "min_silk_clearance": 0.0,
+        "min_silk_clearance": 0.2,
         "min_text_height": 0.8,
         "min_text_thickness": 0.08,
         "min_through_hole_diameter": 0.3,
-        "min_track_width": 0.2,
+        "min_track_width": 0.15,
         "min_via_annular_width": 0.1,
-        "min_via_diameter": 0.4,
+        "min_via_diameter": 0.5,
         "solder_mask_to_copper_clearance": 0.0,
         "use_height_for_length_calcs": true
       },
@@ -171,7 +213,9 @@
           "td_width_to_size_filter_ratio": 0.9
         }
       ],
-      "track_widths": [],
+      "track_widths": [
+        0.0
+      ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
           "corner_radius_percentage": 80,
@@ -198,7 +242,12 @@
           "spacing": 0.6
         }
       },
-      "via_dimensions": [],
+      "via_dimensions": [
+        {
+          "diameter": 0.0,
+          "drill": 0.0
+        }
+      ],
       "zones_allow_external_fillets": false
     },
     "ipc2581": {
