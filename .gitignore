@@ -116,5 +116,4 @@ dist
 .pnp.*
 
 # Project specific
-output
 temp\b

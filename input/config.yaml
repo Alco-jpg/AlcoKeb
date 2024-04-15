@@ -116,26 +116,40 @@ outlines:
       points:
         - ref: main_pinkie_top
           shift: [-0.5px, 0.5py]
+        - ref: main_pinkie_top
+          shift: [0.7px, 0.5py]
         - ref: main_ring_top
           shift: [-0.5px, 0.5py]
+        - ref: main_ring_top
+          shift: [0.5px, 0.5py]
         - ref: main_middle_top
           shift: [-0.5px, 0.5py]
         - ref: main_middle_top
           shift: [0.5px, 0.5py]
         - ref: main_index_top
+          shift: [-0.5px, 0.5py]
+        - ref: main_index_top
           shift: [0.5px, 0.5py]
         - ref: main_far_top
-          shift: [1.5px, 0.5py]
+          shift: [-7, 0.5py]
+        - ref: main_far_top
+          shift: [1.6px, 0.5py]
         - ref: main_far_bottom
-          shift: [1.5px, -0.5py]
-        - ref: thumb_middle
-          shift: [0.5px, 0.5py]
+          shift: [1.6px, -0.5py]
         - ref: thumb_outer
           shift: [-0.5px, 0.5py]
         - ref: thumb_outer
           shift: [0.5px, 0.5py]
         - ref: thumb_outer
           shift: [0.5px, -0.5py]
+        - ref: thumb_middle
+          shift: [0.4px, -0.5py]
+        - ref: thumb_inner
+          shift: [0.4px, -0.5py]
+        - ref: thumb_inner
+          shift: [-0.5px, -0.5py]
+        - ref: thumb_inner
+          shift: [-0.5px, -3]
         - ref: main_pinkie_bottom
           shift: [-0.5px, -0.5py]
       fillet: 2
@@ -152,43 +166,43 @@ pcbs:
         outline: keys
         layer: Eco1.user
 
-#    footprints:
-#      switch:
-#        what: ceoloide/switch_choc_v1_v2
-#        where: /key/
-#        params:
-#          from: "{{column_net}}"
-#          to: "GND"
-#          reversible: true
-#          hotswap: true
-#      nice_nano:
-#        what: ceoloide/mcu_nice_nano
-#        where:
-#          ref: main_far_top
-#          shift: [px,-7]
-#        params:
-#          reversible: true
-#          side: B
-#      reset:
-#        what: ceoloide/reset_switch_tht_top
-#        where:
-#          ref: main_far_top
-#          shift: [10, 0]
-#          rotate: -90
-#        params:
-#          reversible: true
-#      power_switch:
-#        what: ceoloide/power_switch_smd_side
-#        where:
-#          ref: main_far_bottom
-#          shift: [1.43px, -5]
-#        params:
-#          reversible: true
-#      power_connector:
-#        what: ceoloide/battery_connector_jst_ph_2
-#        where:
-#          ref: main_far_home
-#          shift: [18, -14]
-#          rotate: 90
-#        params:
-#          reversible: true
+    footprints:
+      switch:
+        what: ceoloide/switch_choc_v1_v2
+        where: /key/
+        params:
+          from: "{{column_net}}"
+          to: "GND"
+          reversible: true
+          hotswap: true
+      nice_nano:
+        what: ceoloide/mcu_nice_nano
+        where:
+          ref: main_far_top
+          shift: [24,-7]
+        params:
+          reversible: true
+          side: B
+      reset:
+        what: ceoloide/reset_switch_tht_top
+        where:
+          ref: main_far_top
+          shift: [12, 0]
+          rotate: -90
+        params:
+          reversible: true
+      power_switch:
+        what: ceoloide/power_switch_smd_side
+        where:
+          ref: main_far_bottom
+          shift: [1.53px, -5]
+        params:
+          reversible: true
+      power_connector:
+        what: ceoloide/battery_connector_jst_ph_2
+        where:
+          ref: main_far_home
+          shift: [18, -14]
+          rotate: 90
+        params:
+          reversible: true
